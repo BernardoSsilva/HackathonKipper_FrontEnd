@@ -16,8 +16,8 @@ interface CardProps {
 export default function Card({ location, address, vacancies, time }: CardProps) {
 
   return (
-    <main className="p-5 rounded-lg drop-shadow-2xl h-full flex flex-col gap-5 bg-gray-100">
-      <section className="flex justify-end items-end bg-primary w-full h-40 rounded-2xl">
+    <main className="p-5 rounded-lg drop-shadow-2xl h-full flex flex-col gap-10 bg-gray-100">
+      <section className="flex justify-end items-end bg-primary w-full h-[10rem] rounded-2xl">
         {/* <img src="/public/img.jpeg" alt="Descrição da imagem" className="rounded-lg transform rotate-90 w-full h-auto object-cover" /> */}
         <article className="flex w-1/2 gap-1 pb-3 pr-3">
           <div className="bg-white w-full rounded-3xl h-[3rem] flex items-center justify-center gap-2 p-2">
@@ -30,7 +30,7 @@ export default function Card({ location, address, vacancies, time }: CardProps) 
           </div>
         </article>
       </section>
-      <h1 className="text-3xl font-bold">Abrigo - {location}</h1>
+      <h1 className="text-4xl font-bold">Abrigo - {location}</h1>
       <div className="flex justify-start items-center gap-3">
         <MapPin className="text-primary" size={30} />
         <p className="text-2xl">{address}</p>
