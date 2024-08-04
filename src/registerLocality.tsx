@@ -6,7 +6,7 @@ const StyledTextField = styled(TextField)({
     borderRadius: '10px',
   },
 });
-export default function Register(){
+export default function Registerlocality(){
   return(
     <main className="flex flex-col gap-16">
       <div className="flex items-center gap-6 rounded-lg drop-shadow-2xl p-5 justify-center bg-gray-100 mx-16"><Heart /> 
@@ -50,13 +50,13 @@ export default function Register(){
     <div className="flex justify-center gap-3 h-full">
         {/* <NavLink to="/descriptionShelter" title="DescriptionShelter" className="w-full"> */}
           <button className="text-primary bg-gray-200 w-full h-[4rem] flex justify-center items-center rounded-3xl text-3xl gap-5 cursor-pointer">
-            Perfil
+            Cancelar
           </button>
         {/* </NavLink> */}
         {/* <NavLink to="/" title="" className="w-full"> */}
         <button className="bg-primary w-full h-[4rem] flex justify-center items-center rounded-3xl text-3xl gap-5 text-white cursor-pointer">
           <CircleCheck className="text-white" size={32} />
-          Ir para
+          Salvar
         </button>
         {/* </NavLink> */}
       </div>

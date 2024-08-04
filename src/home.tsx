@@ -1,4 +1,5 @@
 import Card from "./components/card";
+import OptionsHelp from "./components/optionsHelp";
 
 export default function Home() {
 
@@ -31,6 +32,7 @@ export default function Home() {
 
   return (
     <section className="flex flex-col gap-14">
+      <OptionsHelp/>
       {cards.map((card) => (
         <Card 
         location={card.location}
