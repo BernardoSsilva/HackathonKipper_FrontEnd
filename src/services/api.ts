@@ -2,7 +2,7 @@ import axios from "axios";
 
 export function createApiRequest() {
   return axios.create({
-    baseURL: ""
+    baseURL: "https://abigoapi.azurewebsites.net"
   });
 }
 
