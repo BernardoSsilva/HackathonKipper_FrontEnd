@@ -19,14 +19,14 @@ export function Router() {
       <Route path="/login" element={<LoginUser />} />
       <Route path="/" element={<DefaultLayout />}>
         <Route path="/" element={<Home />} />
-        <Route path="/home" element={<OptionsHelp />}>
+        <Route path="home" element={<OptionsHelp />}>
           <Route path="optionFood" element={<OptionFood />} />
           <Route path="optionHealth" element={<OptionHealth />} />
           <Route path="optionDonation" element={<OptionDonation />} />
-          <Route path="/home/descriptionShelter" element={<DescriptionShelter />} />
-          <Route path="/home/descriptionFood" element={<DescriptionFood />} />
-          <Route path="/home/descriptionHealth" element={<DescriptionHealth />} />
-          <Route path="/home/descriptionDonation" element={<DescriptionDonation />} />
+          <Route path="descriptionShelter" element={<DescriptionShelter />} />
+          <Route path="descriptionFood" element={<DescriptionFood />} />
+          <Route path="descriptionHealth" element={<DescriptionHealth />} />
+          <Route path="descriptionDonation" element={<DescriptionDonation />} />
         </Route>
         <Route path="descriptionShelter" element={<DescriptionShelter />} />
         <Route path="registerLocality" element={<Registerlocality />} />
