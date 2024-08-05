@@ -1,47 +1,34 @@
-import Card from "./components/card";
-import OptionsHelp from "./components/optionsHelp";
+import { LifeBuoy, MapPinHouse } from "lucide-react";
 
 export default function Home() {
 
-  const cards = [
-    {
-      location: "Centro Criciúma",
-      address: "R. Visc. de Cairú, 450-532 - Santa Barbara - Criciúma",
-      vacancies: 324,
-      time: "07:00 - 23:59"
-    },
-    {
-      location: "Centro Içara",
-      address: "R. Floriano Peixoto, 1234 - Centro - Içara - SC",
-      vacancies: 204,
-      time: "08:00 - 22:59"
-    },
-    {
-      location: "Araranguá",
-      address: "R. Marechal Deodoro, 567 - Centro - Araranguá - SC",
-      vacancies: 324,
-      time: "07:00 - 23:59"
-    },
-    {
-      location: "Florianópolis",
-      address: "R. Dom Jaime Câmara, 543 - Centro - Florianópolis - SC",
-      vacancies: 204,
-      time: "08:00 - 22:59"
-    },
-  ]
-
   return (
-    <section className="flex flex-col gap-14">
-      <OptionsHelp/>
-      {cards.map((card) => (
-        <Card 
-        location={card.location}
-        address={card.address}
-        vacancies={card.vacancies}
-        time={card.time}
-        />
-      ))}
-    </section>
+    <div className="flex flex-col gap-8 mt-10 p-6 justify-center">
+      <div className="flex flex-col gap-2">
+        <h2 className="font-inter text-gray-900 font-normal text-md text-left">
+          Está precisando de ajuda ou quer fazer a diferença?
+        </h2>
+
+        <button className="font-inter text-white text-md bg-primary rounded-2xl p-6 flex items-center justify-start gap-6 w-full hover:bg-opacity-75 hover:transition-all hover:duration-75">
+          <LifeBuoy size={32} />
+          <p className="bold text-white text-opacity-80 font-bold text-left">
+            Preciso de ajuda ou quero ajudar
+          </p>
+        </button>
+      </div>
+      <div className="flex flex-col gap-2">
+        <h2 className="font-inter text-gray-900 text-md text-left font-normal">
+          Cadastre um abrigo, ponto de doação, ajuda médica e mais...
+        </h2>
+
+        <button className="font-inter text-white text-md bg-primary rounded-2xl p-6 flex items-center justify-start gap-6 w-full hover:bg-opacity-75 hover:transition-all hover:duration-75">
+          <MapPinHouse size={32} />
+          <p className="bold text-white text-opacity-80 font-bold text-left">
+            Cadastrar ponto de ajuda
+          </p>
+        </button>
+      </div>
+    </div>
 
   )
 }

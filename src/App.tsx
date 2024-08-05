@@ -7,7 +7,7 @@ function App() {
 
   return (
     <authContext.Provider>
-      <main className='m-[2rem]'>
+      <main>
         <BrowserRouter>
           <Router />
         </BrowserRouter>
