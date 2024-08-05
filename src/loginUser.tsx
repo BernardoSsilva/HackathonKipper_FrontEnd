@@ -25,12 +25,12 @@ export default function LoginUser(){
             Cancelar
           </button>
         {/* </NavLink> */}
-        {/* <NavLink to="/" title="" className="w-full"> */}
+         <NavLink to="/home" title="" className="w-full"> 
         <button className="bg-primary w-full h-[4rem] flex justify-center items-center rounded-3xl text-3xl gap-5 text-white cursor-pointer">
           <CircleCheck className="text-white" size={32} />
           Salvar
         </button>
-        {/* </NavLink> */}
+        </NavLink> 
       </div>
        <NavLink to="/registerUser" title="DescriptionShelter" className="w-full">
       <div className="flex justify-center gap-3"><p className="text-2xl text-primary underline">Não tenho uma conta</p></div>
