@@ -18,17 +18,18 @@ export default function Header() {
         <div className="flex flex-col justify-center gap-6 h-full">
           {/* <NavLink to="/" title="" className="w-full"> */}
             <button className="font-inter text-white text-2xl bg-primary rounded-3xl p-6 flex items-center justify-start gap-5">
-              <LifeBuoy size={50} /> Preciso de ajuda
+              <LifeBuoy size={32} /> 
+              <p className="bold text-white text-opacity-80 font-bold text-left">
+              Preciso de ajuda ou quero ajudar
+              </p>
             </button>
           {/* </NavLink> */}
           {/* <NavLink to="/registerLocality" title="" className="w-full"> */}
             <button className="font-inter text-white text-2xl bg-primary rounded-3xl p-6 flex items-center justify-start gap-5">
-              <MapPinHouse size={50} /> Cadastrar ponto de ajuda
-            </button>
-          {/* </NavLink> */}
-          <button className="font-inter text-white text-2xl bg-primary rounded-3xl p-6 flex items-center justify-start gap-5">
-            <HandHeart size={50} /> Quero ajudar
-          </button>
+              <MapPinHouse size={32} />  <p className="bold text-white text-opacity-80 font-bold text-left">
+              Cadastrar ponto de ajuda
+            </p>
+            </button>       
         </div>
       }
 
