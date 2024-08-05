@@ -1,32 +1,23 @@
-import CardShelter from "./components/cardShelter";
+import CardHealth from "./components/cardHealth";
 import FilteringOptions from "./components/filteringOptions";
 
-export default function Home() {
+export default function OptionHealth() {
 
   const cards = [
     {
-      location: "Centro Criciúma",
+      location: "Ponto de ajuda médica - SOS",
       address: "R. Visc. de Cairú, 450-532 - Santa Barbara - Criciúma",
-      vacancies: 324,
       time: "07:00 - 23:59"
     },
     {
-      location: "Centro Içara",
+      location: "Ponto de ajuda médica - SOS",
       address: "R. Floriano Peixoto, 1234 - Centro - Içara - SC",
-      vacancies: 204,
       time: "08:00 - 22:59"
     },
     {
-      location: "Araranguá",
+      location: "Ponto de ajuda médica - SOS",
       address: "R. Marechal Deodoro, 567 - Centro - Araranguá - SC",
-      vacancies: 324,
       time: "07:00 - 23:59"
-    },
-    {
-      location: "Florianópolis",
-      address: "R. Dom Jaime Câmara, 543 - Centro - Florianópolis - SC",
-      vacancies: 204,
-      time: "08:00 - 22:59"
     },
   ]
 
@@ -35,10 +26,9 @@ export default function Home() {
       <FilteringOptions />
       <section className="flex flex-col gap-14 mt-10">
         {cards.map((card) => (
-          <CardShelter
+          <CardHealth
             location={card.location}
             address={card.address}
-            vacancies={card.vacancies}
             time={card.time}
           />
         ))}

@@ -4,9 +4,12 @@ import { Clock } from 'lucide-react';
 import { House } from 'lucide-react';
 import { Send } from 'lucide-react';
 import { NavLink } from "react-router-dom";
+import OptionsHelp from "../components/optionsHelp";
 
 export default function DescriptionShelter() {
   return (
+    <>
+    <OptionsHelp/>
     <main className="p-5 rounded-lg h-full flex flex-col gap-10">
       <section className="flex justify-end items-end bg-primary w-full h-[20rem] rounded-2xl">
         {/* <img src="/public/img.jpeg" alt="Descrição da imagem" className="rounded-lg transform rotate-90 w-full h-auto object-cover" /> */}
@@ -64,5 +67,5 @@ export default function DescriptionShelter() {
               </NavLink>
             </div>
     </main>
-            )
+    </>        )
 }
