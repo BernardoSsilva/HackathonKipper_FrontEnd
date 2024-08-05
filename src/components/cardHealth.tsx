@@ -34,7 +34,7 @@ export default function CardHealth({ location, address, time }: CardProps) {
         <p className="text-2xl">{address}</p>
       </div>
       <div className="flex justify-center gap-3 h-full">
-        <NavLink to="/descriptionShelter" title="DescriptionShelter" className="w-full">
+        <NavLink to="/descriptionHealth" title="DescriptionShelter" className="w-full">
           <button className="text-primary bg-gray-200 w-full h-[4rem] flex justify-center items-center rounded-3xl text-3xl gap-5 cursor-pointer">
             <House className="text-primary" size={32} />
             Perfil
