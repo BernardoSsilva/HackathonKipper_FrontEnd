@@ -18,7 +18,7 @@ export default function OptionsHelp() {
           <p className="text-lg">Abrigos</p>
         </div>
       </NavLink>
-      <NavLink to="/optionFood" title="">
+      <NavLink to="/home/optionFood" title="">
         <div className="flex flex-col items-center gap-3">
           <button onClick={() => { setIsHouseFocused(true), setIsUtensils(true), setIsHeartPulse(false), setHandHeart(false) }}>
             <Utensils size={60} className={isUtensils ? 'text-primary' : 'text-gray-100'} />
@@ -26,7 +26,7 @@ export default function OptionsHelp() {
           <p className="text-lg">Alimentação</p>
         </div>
       </NavLink>
-      <NavLink to="/optionHealth" title="">
+      <NavLink to="/home/optionHealth" title="">
       <div className="flex flex-col items-center gap-3">
         <button onClick={() => { setIsHouseFocused(true), setIsUtensils(false), setIsHeartPulse(true), setHandHeart(false) }}>
           <HeartPulse size={60} className={isHeartPulse ? 'text-primary' : 'text-gray-100'} />
@@ -34,7 +34,7 @@ export default function OptionsHelp() {
         <p className="text-lg">Saúde</p>
       </div>
       </NavLink>
-      <NavLink to="/optionDonation" title="">
+      <NavLink to="/home/optionDonation" title="">
       <div className="flex flex-col items-center gap-3">
         <button onClick={() => { setIsHouseFocused(true), setIsUtensils(false), setIsHeartPulse(false), setHandHeart(true) }}>
           <HandHeart size={60} className={isHandHeart ? 'text-primary' : 'text-gray-100'} />
