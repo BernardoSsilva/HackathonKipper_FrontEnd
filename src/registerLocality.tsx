@@ -74,7 +74,7 @@ export default function Register() {
           <NumberInput
             className="base-NumberInput-root"
             value={availableVacanciesNumber}
-            onChange={(event: any, value: number) => setAvailableVacanciesNumber(value)}
+            onChange={(event, value) => { setAvailableVacanciesNumber(value ?? 0); console.log(event) }}
             placeholder="Número de vagas disponíveis"
           />
           <StyledTextField

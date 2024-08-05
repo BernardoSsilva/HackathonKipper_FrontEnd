@@ -6,12 +6,13 @@ import { authContext } from './contexts/authContextProvider'
 function App() {
 
   return (
-    <authContext.Provider>
+    <authContext.Provider value='' >
       <main>
         <BrowserRouter>
           <Router />
         </BrowserRouter>
       </main>
+
     </authContext.Provider>
   )
 }
