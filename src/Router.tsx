@@ -13,17 +13,17 @@ import OptionDonation from './optionDonation'
 export function Router() {
   return (
     <Routes>
-      <Route path="/" element={<LoginUser />} />
+      <Route path="/login" element={<LoginUser />} />
       <Route path="/" element={<DefaultLayout />}>
-        <Route path="/" element={<OptionsHelp />}>
-          <Route path="/home" element={<Home />} />
-          <Route path="/optionFood" element={<OptionFood />} />
-          <Route path="/optionHealth" element={<OptionHealth />} />
-          <Route path="/optionDonation" element={<OptionDonation />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<OptionsHelp />}>
+          <Route path="optionFood" element={<OptionFood />} />
+          <Route path="optionHealth" element={<OptionHealth />} />
+          <Route path="optionDonation" element={<OptionDonation />} />
         </Route>
-        <Route path="/descriptionShelter" element={<DescriptionShelter />} />
-        <Route path="/registerLocality" element={<Registerlocality />} />
-        <Route path="/registerUser" element={<RegisterUser />} />
+        <Route path="descriptionShelter" element={<DescriptionShelter />} />
+        <Route path="registerLocality" element={<Registerlocality />} />
+        <Route path="registerUser" element={<RegisterUser />} />
       </Route>
     </Routes>
   )
